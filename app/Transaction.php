@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Transaction extends Model
+{
+    protected $fillable = [
+        'ID_CUSTOMERS', 'CODE_TRANSACTIONS', 'RECIPIENT_TRANSACTIONS', 'CONTACT_RECIPIENT_TRANSACTIONS', 'SHIPPING_ADDRESS_TRANSACTIONS', 'SHIPPING_COSTS_TRANSACTIONS', 'COURIER_TRANSACTIONS', 'PROOF_OF_PAYMENT_TRANSACTIONS', 'STATUS_TRANSACTIONS', 'RECEIPT_CODE_TRANSACTIONS'
+    ];
+
+    protected $primaryKey = 'ID_TRANSACTIONS';
+}
